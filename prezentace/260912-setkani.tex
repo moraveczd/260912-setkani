@@ -1,0 +1,192 @@
+\documentclass[hyperref=unicode]{beamer}
+
+\usepackage[absolute,overlay]{textpos}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\adjustboxset*{center}
+\usepackage{caption}
+\usepackage{chemformula}
+\usepackage{elements}
+
+%dělení slov
+\usepackage{ragged2e}
+\let\raggedright=\RaggedRight
+%konec dělení slov
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{czech}
+
+\def\uv#1{„#1“}
+
+\usetheme[numbering=fraction]{metropolis}
+%\mode<presentation>{\usetheme{Madrid}}
+%\DefineNamedColor{named}{pozadi}{RGB}{200,200,200}
+%\usecolortheme{crane}
+
+%------------------------------------------------
+% Fonty (LuaLaTeX nebo XeLaTeX) %------------------------------------------------
+\usepackage{fontspec}
+\setmainfont{Source Sans Pro}
+\setsansfont{Source Sans Pro}
+\setmonofont{JetBrains Mono}
+
+%------------------------------------------------
+% Grafika
+%------------------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tikz}
+\usetikzlibrary{ positioning, arrows.meta, calc, shapes.geometric }
+
+%------------------------------------------------
+% Barvy
+%------------------------------------------------
+\definecolor{MUblue}{HTML}{00467F}
+\definecolor{MUlight}{HTML}{EAF2F8}
+\definecolor{MUgreen}{HTML}{008A5E}
+\setbeamercolor{frametitle}{fg=MUblue}
+\setbeamercolor{title}{fg=MUblue}
+\setbeamercolor{block title}{ fg=white, bg=MUlight }
+\setbeamercolor{block body}{ bg=MUblue }
+\setbeamercolor{alerted text}{ fg=MUgreen }
+
+%------------------------------------------------
+% Metropolis nastavení
+%------------------------------------------------
+
+\metroset{ progressbar=frametitle, sectionpage=progressbar, block=fill }
+
+%------------------------------------------------
+% Vzhled seznamů
+%------------------------------------------------
+\setbeamertemplate{itemize item}{\small$\blacktriangleright$} \setbeamertemplate{itemize subitem}{\tiny$\blacktriangleright$}
+
+%------------------------------------------------
+% Číslování obrázků a tabulek %------------------------------------------------
+
+\setbeamertemplate{caption}[numbered]
+
+% --------------------------------------------------
+% Bez navigačních ikon
+% --------------------------------------------------
+
+\setbeamertemplate{navigation symbols}{}
+
+% --------------------------------------------------
+% Horní lišta se sekcí
+% --------------------------------------------------
+
+\setbeamercolor{section in head/foot}{ fg=white, bg=MUgreen } \setbeamertemplate{headline}
+{ \leavevmode
+	\hbox{ \begin{beamercolorbox}[ wd=\paperwidth, ht=2.8ex, dp=1.2ex, leftskip=1em ]{section in head/foot}
+			\insertsectionhead
+
+			\ifx\insertsubsectionhead\empty \else \insertsectionhead\hspace{1em}$\triangleright$\hspace{0.5em} \insertsubsectionhead \fi
+
+		\end{beamercolorbox}
+	}
+}
+
+% --------------------------------------------------
+% Dolní lišta s číslováním
+% --------------------------------------------------
+
+\setbeamercolor{author in head/foot}{ fg=white, bg=MUgreen } \setbeamertemplate{footline}
+{
+	\leavevmode
+	\hbox{
+		\begin{beamercolorbox}[ wd=\paperwidth, ht=2.8ex, dp=1.2ex, rightskip=1em ]{author in head/foot}
+			\hfill
+			\insertframenumber/\inserttotalframenumber \end{beamercolorbox}
+	}
+}
+
+\title{Využití Wikipedie pro tvorbu studijních materiálů}
+\author{Zdeněk Moravec \\ zdenek.moravec@wikimedia.cz}
+
+\titlegraphic{\includegraphics[height=.25\textheight]{Wikipedia-logo.png}}
+
+\date{}
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\frame{
+	\frametitle{}
+	\vfill
+
+	\begin{itemize}
+		\item Kde berete obrázky do svých prezentací a pracovních listů?
+		\item Wikipedii většina učitelů zná, ale méně lidí ví, že je také cestou k ověřitelným zdrojům a milionům legálně použitelných obrázků.
+	\end{itemize}
+	\vfill
+}
+
+\section{Wikipedie}
+\frame{
+	\frametitle{}
+	\vfill
+
+	\begin{itemize}
+		\item Wikipedie je encyklopedie -- terciární zdroj informací.
+		\item Je dostupná zcela zdarma, bez reklam.
+		\item Může sloužit jako dobrý rozcestník na sekundární a primární zdroje informací k danému tématu.
+		\item U každého článku jsou také zpravidla uvedeny knihy a další literární zdroje pojednávající o tématu.
+		\item \textbf{Ukázka} -- \href{https://cs.wikipedia.org/wiki/Vod\%C3\%ADk}{Vodík}
+		\item Česká Wikipedie -- téměř 600 000 článků
+		\item Anglická Wikipedie -- více než 7 200 000 článků
+	\end{itemize}
+	\vfill
+}
+
+\section{Wikimedia Commons}
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{columns}
+		\begin{column}{.8\textwidth}
+			\begin{itemize}
+				\item \href{https://commons.wikimedia.org/}{\underline{Wikimedia Commons}} je organizované centrální úložiště licenčně volných fotografií, videí, ilustrací, zvuků a dalšího multimediálního obsahu.
+				\item V současnosti obsahuje více než 147 miliónů volně využitelných souborů.
+				\item Fotografie a ilustrace jsou nezbytnou součástí výukových materiálů, proto může být projekt Wikimedia Commons zajímavý pro vyučující.
+				\item Fotografie a obrázky jsou nejčastěji dostupné pod některou z variant licence \textit{Creative Commons} nebo \textit{Public Domain}. Přesný způsob
+				\item \textbf{Ukázka} -- \href{https://is.muni.cz/www/moravec/c2062_anorganicka_chemie_ii/}{C2062 Anorganická chemie II}
+				\item \textbf{Ukázka} -- \href{https://commons.wikimedia.org/wiki/File:Potassium_chlorate_and_gummi_bear_experiment.webm}{Videozáznamy chemických pokusů}
+			\end{itemize}
+		\end{column}
+
+		\begin{column}{.25\textwidth}
+			\begin{figure}
+				\includegraphics[width=\textwidth]{Commons-logo.png}
+			\end{figure}
+		\end{column}
+	\end{columns}
+	\vfill
+}
+
+\section{Závěr}
+\frame{
+	\frametitle{}
+	\vfill
+
+	\begin{itemize}
+		\item Nepřebírejte texty.
+		\item Využívejte Wikipedii hlavně jako rozcestník k dalším informacím.
+		\item Využívejte projekt Wikimedia Commons jako zdroj legálně použitelných ilustrací a multimediálních souborů.
+		\item \textbf{Samozřejmě budeme rádi, pokud se zapojíte do tvorby Wikipedie, ať už opravováním chyb, tvorbou a rozšiřováním článků nebo nahráváním multimédií.}
+	\end{itemize}
+	\vfill
+}
+
+\end{document}

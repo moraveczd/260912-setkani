@@ -1,0 +1,4 @@
+\xpg@aux {}{czech}
+\beamer@sectionintoc {1}{Wikipedie}{3}{0}{1}
+\beamer@sectionintoc {2}{Wikimedia Commons}{5}{0}{2}
+\beamer@sectionintoc {3}{Závěr}{7}{0}{3}
