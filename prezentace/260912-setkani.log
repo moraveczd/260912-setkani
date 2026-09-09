@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.22)  9 SEP 2026 21:10
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.22)  9 SEP 2026 21:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2125,6 +2125,28 @@ Overfull \hbox (2.4pt too wide) has occurred while \output is active
 [8
 
 ]
+Overfull \hbox (2.4pt too wide) in paragraph at lines 192--192
+[][][][]  
+ []
+
+
+Overfull \hbox (2.4pt too wide) in paragraph at lines 192--192
+[][][][]  
+ []
+
+
+Overfull \hbox (2.4pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+
+Overfull \hbox (2.4pt too wide) has occurred while \output is active
+[][][][] 
+ []
+
+[9
+
+]
 \tf@nav=\write7
 \openout7 = `260912-setkani.nav'.
 
@@ -2143,12 +2165,12 @@ Package rerunfilecheck Info: File `260912-setkani.out' has not changed.
 (rerunfilecheck)             Checksum: D0F1ED671DC1E2CD7DB414F46A0AFA7B;293.
  ) 
 Here is how much of TeX's memory you used:
- 40012 strings out of 467744
- 853261 string characters out of 5425945
- 1390232 words of memory out of 5000000
- 68398 multiletter control sequences out of 15000+600000
- 634524 words of font info for 131 fonts, out of 8000000 for 9000
+ 40020 strings out of 467744
+ 853552 string characters out of 5425945
+ 1390276 words of memory out of 5000000
+ 68403 multiletter control sequences out of 15000+600000
+ 634548 words of font info for 134 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,15n,143p,1901b,790s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 260912-setkani.pdf (8 pages).
+Output written on 260912-setkani.pdf (9 pages).
