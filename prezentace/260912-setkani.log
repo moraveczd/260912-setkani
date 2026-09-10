@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.22)  9 SEP 2026 21:16
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.8.22)  10 SEP 2026 08:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -694,7 +694,7 @@ Package textpos Info: choosing support for LaTeX3 on input line 60.
 \TP@margin=\dimen306
 \TP@absmargin=\dimen307
 
-Grid set 16 x 16 = 22.7622pt x 17.07166pt
+Grid set 16 x 16 = 28.45274pt x 16.00467pt
 \TPboxrulesize=\dimen308
 \TP@ox=\dimen309
 \TP@oy=\dimen310
@@ -1691,12 +1691,12 @@ LaTeX Font Info:    ... okay on input line 119.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(28.45274pt, 307.28987pt, 28.45274pt)
-* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
-* \paperwidth=364.19536pt
-* \paperheight=273.14662pt
-* \textwidth=307.28987pt
-* \textheight=244.6939pt
+* h-part:(L,W,R)=(28.45274pt, 398.3386pt, 28.45274pt)
+* v-part:(T,H,B)=(0.0pt, 256.0748pt, 0.0pt)
+* \paperwidth=455.24408pt
+* \paperheight=256.0748pt
+* \textwidth=398.3386pt
+* \textheight=227.62207pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
 * \topmargin=-72.26999pt
@@ -1945,7 +1945,7 @@ Overfull \hbox (2.4pt too wide) in paragraph at lines 123--123
 File: Wikipedia-logo.png Graphic file (type bmp)
 <Wikipedia-logo.png>
 
-Overfull \vbox (83.42664pt too high) detected at line 123
+Overfull \vbox (83.74036pt too high) detected at line 123
  []
 
 
@@ -2167,7 +2167,7 @@ Package rerunfilecheck Info: File `260912-setkani.out' has not changed.
 Here is how much of TeX's memory you used:
  40020 strings out of 467744
  853552 string characters out of 5425945
- 1390276 words of memory out of 5000000
+ 1390315 words of memory out of 5000000
  68403 multiletter control sequences out of 15000+600000
  634548 words of font info for 134 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
